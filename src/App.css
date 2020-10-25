@@ -1,39 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+
 body {
-  background-color: #000911;
-  color: #97d8eb;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  color: #000911;
-  font-weight: bold;
-  background-color: #97d8eb;
-  padding: 0.3rem;
-  border-radius: 3px;
+:root {
+  --font-heavy: 'Montserrat Alternates', sans-serif;
+  --font-medium: 'Heebo', sans-serif;
+  --font-light: 'Comfortaa', cursive;
+  --primary-color: rgba(17, 17, 84, 1);
+  --secondary-color: rgba(234, 201, 42, 1);
+  --color-cold: rgba(80, 193, 230, 1);
+  --color-warm: rgba(212, 33, 82, 1);
+  --light: rgba(226, 226, 240, 1);
+  --light-medium: rgba(119, 119, 148, 1);
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   height: 100vh;
 }
 
-.item {
-  text-align: center;
-  width: fit-content;
+h1 {
+  font-family: var(--font-heavy);
+}
+p {
+  font-family: var(--font-light);
 }
 
-.item > img {
-  max-width: 80vw;
+.icon {
+  font-size: 2em;
 }
-
-.container::after {
-  content: '';
-  height: 15vh;
+.color-warm {
+  color: var(--color-warm);
+}
+.color-cold {
+  color: var(--color-cold);
 }
